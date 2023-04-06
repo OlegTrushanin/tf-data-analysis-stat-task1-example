@@ -10,8 +10,7 @@ def solution(x: np.array) -> float:
     # Средний пройденный путь
     mean_distance = np.mean(x)
     
-    
-    mean_speed = mean_distance / time  # средняя скорость
-    acceleration = mean_speed**2 / (2 * mean_distance)  # оценка ускорения
+    acceleration = 2 * mean_distance / time**2
     
     return acceleration
+
